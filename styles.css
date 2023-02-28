@@ -16,7 +16,7 @@ body {
   max-width: 1440px;
   min-width: 300px;
   width: 90vw;
-  height: 150vh;
+  height: 145vh;
   margin-top: 30px;
 }
 
@@ -39,7 +39,7 @@ ul {
   list-style: none;
 }
 
-li {
+.nav-list {
   margin-left: 30px;
   display: inline-block;
   cursor: pointer;
@@ -170,18 +170,19 @@ main {
 
 .down-content {
   margin-top: 50px;
-  display: flex;
-  flex-direction: row;
   height: 150px;
   width: 100%;
+}
+
+.down-list {
+  display: flex;
+  gap: 80px;
 }
 
 .bottom-contents {
   display: flex;
   width: 420px;
   flex-direction: row;
-  margin-right: 49px;
-  cursor: pointer;
 }
 
 .bottom-contents img {
@@ -189,8 +190,13 @@ main {
   height: 130px;
 }
 
+.bottom-contents img:hover {
+  cursor: pointer;
+}
+
 .down-form {
   margin-left: 25px;
+  cursor: pointer;
 }
 
 .down-form h2 {
