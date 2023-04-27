@@ -31,7 +31,8 @@ header {
 
 header img:hover {
   cursor: pointer;
-  margin-bottom: 10px;
+  position: relative;
+  bottom: 5px;
 }
 
 ul {
@@ -208,7 +209,7 @@ main {
 .down-form p {
   font-size: 17px;
   color: hsl(236, 13%, 42%);
-  width: 230px;
+  width: 232px;
 }
 
 @media screen and (max-width: 900px) {
@@ -313,6 +314,7 @@ main {
   .bottom-contents {
     min-width: 300px;
     width: 100%;
+    gap: 15px;
   }
 
   .down-form,
