@@ -16,7 +16,6 @@ body {
   max-width: 1440px;
   min-width: 300px;
   width: 90vw;
-  height: 145vh;
   margin-top: 30px;
 }
 
@@ -32,7 +31,8 @@ header {
 
 header img:hover {
   cursor: pointer;
-  margin-bottom: 10px;
+  position: relative;
+  bottom: 5px;
 }
 
 ul {
@@ -63,7 +63,6 @@ main {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 600px;
   margin-top: 30px;
 }
 
@@ -132,7 +131,6 @@ main {
 .main-container2 {
   display: flex;
   flex-direction: column;
-  height: 576px;
   width: 300px;
   background-color: hsl(240, 100%, 5%);
 }
@@ -211,5 +209,116 @@ main {
 .down-form p {
   font-size: 17px;
   color: hsl(236, 13%, 42%);
-  width: 230px;
+  width: 232px;
+}
+
+@media screen and (max-width: 900px) {
+  * {
+    padding-inline: 0 !important;
+    margin-inline: 0 !important;
+    height: unset !important;
+  }
+
+  header {
+    min-width: 300px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .container {
+    padding: 0 20px !important;
+    margin-inline: 0;
+    min-width: 300px;
+    width: 100vw;
+  }
+
+  main {
+    margin-inline: 0;
+    min-width: 300px;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .section-1,
+  .section-2,
+  .news {
+    width: 100%;
+  }
+
+  .section-1 {
+    margin: 0;
+    padding: 30px 0;
+  }
+
+  .section-1 h1 {
+    font-size: 36px;
+  }
+
+  .section-2 {
+    padding-bottom: 30px;
+  }
+
+  .section-2 p {
+    margin: 0;
+  }
+
+  .readmore-button {
+    margin: 0;
+    margin-top: 30px;
+    width: 100% !important;
+    padding-block: 8px;
+  }
+
+  .main-container1 {
+    min-width: 300px;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .main-container2 {
+    padding: 20px !important;
+    min-width: 300px;
+    width: 100%;
+  }
+
+  .top-row {
+    min-width: 300px;
+    width: 100%;
+  }
+
+  .top-row img {
+    width: 100%;
+  }
+
+  .down-row {
+    min-width: 300px;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .down-content {
+    min-width: 300px;
+    width: 100%;
+  }
+
+  .down-list {
+    min-width: 300px;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .bottom-contents {
+    min-width: 300px;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .down-form,
+  .down-form p {
+    width: 100%;
+  }
 }
