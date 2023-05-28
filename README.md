@@ -18,7 +18,7 @@
 
 <br>
 
-<h3><a href="https://afrguilherme.github.io/PlayStation-Store/">Deploy Here! 👈</a></h3>
+<h3><a href="https://afrguilherme.github.io/News-Homepage/">Deploy Here! 👈</a></h3>
 
 <br>
 
