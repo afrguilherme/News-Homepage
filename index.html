@@ -16,9 +16,9 @@
   <body>
     <div class="container">
       <header>
-        <img alt="World-News-Logo" src="./assets/logo.svg" />
+        <img class="news-logo" alt="World-News-Logo" src="./assets/logo.svg" />
         <nav>
-          <ul>
+          <ul id="menu-list">
             <li class="nav-list">Home</li>
             <li class="nav-list">New</li>
             <li class="nav-list">Popular</li>
@@ -26,6 +26,11 @@
             <li class="nav-list">Categories</li>
           </ul>
         </nav>
+        <img
+          class="menu-icon"
+          onclick="showMenu()"
+          src="./assets/icon-menu.svg"
+        />
       </header>
 
       <main>
@@ -111,4 +116,16 @@
       </div>
     </div>
   </body>
+  <script>
+    const menuList = document.getElementById("menu-list");
+    menuList.style.maxHeight = "0px";
+
+    function showMenu() {
+      if (menuList.style.maxHeight === "0px") {
+        menuList.style.maxHeight = "120px";
+      } else {
+        menuList.style.maxHeight = "0px";
+      }
+    }
+  </script>
 </html>
